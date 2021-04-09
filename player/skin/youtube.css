@@ -631,7 +631,8 @@
 	float: right;
 	margin-top: 5px;
 }
-.kt-player .fp-controls .fp-settings.is-hd:after {
+.kt-player .fp-controls .fp-settings.is-hd:after,
+.kt-player .fp-controls .fp-settings.is-4k:after {
 	display: block;
 	content: 'hd';
 	position: absolute;
@@ -642,7 +643,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 8.3px;
+	font-size: 9px;
 	line-height: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -650,6 +651,11 @@
 	font-weight: bold;
 	border-radius: 1px;
 	-webkit-border-radius: 1px;
+}
+.kt-player .fp-controls .fp-settings.is-4k:after {
+	content: '4k';
+	background: #f12e24;
+	color: #fff;
 }
 .kt-player .fp-controls .fp-settings .fp-settings-list {
 	display: none;
@@ -710,7 +716,8 @@
 .kt-player .fp-controls .fp-settings .fp-settings-list .fp-settings-list-item.is-selected a:hover:before {
 	background: #fff;
 }
-.kt-player .fp-controls .fp-settings .fp-settings-list .fp-settings-list-item.is-hd a:after {
+.kt-player .fp-controls .fp-settings .fp-settings-list .fp-settings-list-item.is-hd a:after,
+.kt-player .fp-controls .fp-settings .fp-settings-list .fp-settings-list-item.is-4k a:after {
 	display: block;
 	content: 'hd';
 	position: absolute;
@@ -721,7 +728,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 8.3px;
+	font-size: 9px;
 	line-height: normal;
 	font-stretch: normal;
 	font-style: normal;
@@ -729,6 +736,11 @@
 	font-weight: bold;
 	border-radius: 1px;
 	-webkit-border-radius: 1px;
+}
+.kt-player .fp-controls .fp-settings .fp-settings-list .fp-settings-list-item.is-4k a:after {
+	content: '4k';
+	background: #f12e24;
+	color: #fff;
 }
 .is-settings-open.kt-player .fp-controls .fp-settings .fp-settings-list {
 	display: block;

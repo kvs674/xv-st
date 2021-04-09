@@ -92,6 +92,8 @@
 @colors-toolbar-volume-slider-filled: #ccc;
 @colors-toolbar-hd-background: #f00;
 @colors-toolbar-hd-text: #fff;
+@colors-toolbar-4k-background: #f00;
+@colors-toolbar-4k-text: #fff;
 
 @colors-timeline-background: #ccc;
 @colors-timeline-buffer: #eee;
@@ -761,7 +763,8 @@
 			float: right;
 			position: relative;
 
-			&.is-hd:after {
+			&.is-hd:after,
+			&.is-4k:after {
 				display: block;
 				content: 'hd';
 				position: absolute;
@@ -772,13 +775,19 @@
 				color: @colors-toolbar-hd-text;
 				text-transform: uppercase;
 				font-family: Arial,Helvetica,sans-serif;
-				font-size: 8.3px;
+				font-size: 9px;
 				line-height: normal;
 				font-stretch: normal;
 				font-style: normal;
 				font-variant: normal;
 				font-weight: bold;
 				.borderradius(1px);
+			}
+
+			&.is-4k:after {
+				content: '4k';
+				background: @colors-toolbar-4k-background;
+				color: @colors-toolbar-4k-text;
 			}
 
 			.fp-settings-list {
@@ -850,7 +859,8 @@
 						}
 					}
 
-					&.is-hd {
+					&.is-hd,
+					&.is-4k {
 						a:after {
 							display: block;
 							content: 'hd';
@@ -862,13 +872,21 @@
 							color: @colors-toolbar-hd-text;
 							text-transform: uppercase;
 							font-family: Arial,Helvetica,sans-serif;
-							font-size: 8.3px;
+							font-size: 9px;
 							line-height: normal;
 							font-stretch: normal;
 							font-style: normal;
 							font-variant: normal;
 							font-weight: bold;
 							.borderradius(1px);
+						}
+					}
+
+					&.is-4k {
+						a:after {
+							content: '4k';
+							background: @colors-toolbar-4k-background;
+							color: @colors-toolbar-4k-text;
 						}
 					}
 				}
