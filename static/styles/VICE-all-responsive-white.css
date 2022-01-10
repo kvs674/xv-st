@@ -6530,10 +6530,10 @@ div.top img {
     font-size: 14px;
     font-weight: 500;
     margin: 0 30px 2rem 0;
-    display: inline-block;
-    /* display: flex; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .block-details .item:first-child {
